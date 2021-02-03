@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="icon" type="image/png" href="/images/weather.png">
+    <title>About</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-  <div class="flex">
-    {{>header}}
-    <img class="portrait" src="/images/aerith.jpg" alt="Aerith">
-  </div>
-
-  {{>footer}}
+    <div class="main-content">
+        {{>header}}
+        <p>This site was created by Ben Oh. It uses data from mapbox and weather stack</p>
+        <img class="portrait" src="/img/me.jpg">
+    </div>
+    
+    {{>footer}}
 </body>
 
 </html>

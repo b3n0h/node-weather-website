@@ -1,32 +1,31 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-  <title>Weather</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="icon" type="image/png" href="/images/weather.png">
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-  <div class="flex">
-    {{>header}}
+    <div class="main-content">
+        {{>header}}
 
-    <p>Use this site to get your weather!</p>
-    
-    <form>
-      <input placeholder="City name">
-      <button>Search</button>
-    </form>
-    <p id="msgOne">
+        <p>Use this site to get your weather!</p>
 
-    </p>
-    <p id="msgTwo">
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
 
-    </p>
-  </div>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
 
-  {{>footer}}
-  <script src="/js/app.js"></script>
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
