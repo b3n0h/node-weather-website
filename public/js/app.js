@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
   msgOne.textContent = 'loading...'
   msgTwo.textContent = ''
 
-  fetch(`http://localhost:3000/weather?address=${location}`)
+  fetch(`/weather?address=${location}`)
     .then(r => {
       r.json()
         .then(data => {
